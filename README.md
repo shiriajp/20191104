@@ -49,7 +49,7 @@ node_moduleがこみっとにふようなので
 touch .gitignore
 
 .gitignore
->node_modules/
+>node_modules/ (node_moduleは多いからいらない。お仕事とかなら環境ごと持っていくので入れる))
 ```
 gitに反映する
 
@@ -242,4 +242,142 @@ drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 16:16 node_modules
 -rw-rw-rw- 1 shiriajp shiriajp  362 Nov  4 16:23 package.json
 -rw-rw-rw- 1 shiriajp shiriajp 5749 Nov  4 16:22 tsconfig.json
 
+```
+
+## 8. （最後に）このReadmeをPushした履歴...この書き込みもこのあとPUSH
+更新の流れ
+```
+shiriajp@DESKTOP-QMP86VA:~/A$ 
+shiriajp@DESKTOP-QMP86VA:~/A$ ls -l
+total 16
+-rw-rw-rw- 1 shiriajp shiriajp    0 Nov  4 15:57 README.md
+-rw-rw-rw- 1 shiriajp shiriajp  309 Nov  4 16:32 arrow.ts
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 16:12 build
+-rw-rw-rw- 1 shiriajp shiriajp  484 Nov  4 16:19 helloworld.ts
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 15:34 node_modules
+-rw-rw-rw- 1 shiriajp shiriajp 2601 Nov  4 15:34 package-lock.json
+-rw-rw-rw- 1 shiriajp shiriajp  364 Nov  4 16:25 package.json
+-rw-rw-rw- 1 shiriajp shiriajp 5751 Nov  4 16:33 tsconfig.json
+shiriajp@DESKTOP-QMP86VA:~/A$ cd ../20191104/
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ ls -l
+total 16
+-rw-rw-rw- 1 shiriajp shiriajp    0 Nov  4 16:15 README.md
+-rw-rw-rw- 1 shiriajp shiriajp  138 Nov  4 16:22 arrow.ts
+-rw-rw-rw- 1 shiriajp shiriajp  484 Nov  4 16:22 helloworld.ts
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 16:16 node_modules
+-rw-rw-rw- 1 shiriajp shiriajp 2601 Nov  4 16:15 package-lock.json
+-rw-rw-rw- 1 shiriajp shiriajp  362 Nov  4 16:23 package.json
+-rw-rw-rw- 1 shiriajp shiriajp 5749 Nov  4 16:22 tsconfig.json
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ git checkout .
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ cp /mnt/c/Users/SHIRIA/Desktop/\!\!__React___/20191104/README.md ./
+shiriajp@DESKTOP-QMP86VA:~/20191104$ cp /mnt/c/Users/SHIRIA/Desktop/\!\!__React___/20191104/VsCodeLiveShare.md ./
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ ls -l
+total 28
+-rw-rw-rw- 1 shiriajp shiriajp 7215 Nov  4 17:27 README.md
+-rwxrwxrwx 1 shiriajp shiriajp  531 Nov  4 17:27 VsCodeLiveShare.md
+-rw-rw-rw- 1 shiriajp shiriajp  138 Nov  4 16:22 arrow.ts
+-rw-rw-rw- 1 shiriajp shiriajp  484 Nov  4 16:22 helloworld.ts
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 16:16 node_modules
+-rw-rw-rw- 1 shiriajp shiriajp 2601 Nov  4 16:15 package-lock.json
+-rw-rw-rw- 1 shiriajp shiriajp  362 Nov  4 16:23 package.json
+-rw-rw-rw- 1 shiriajp shiriajp 5749 Nov  4 16:22 tsconfig.json
+shiriajp@DESKTOP-QMP86VA:~/20191104$ git add *.md
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+        new file:   VsCodeLiveShare.md
+
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ git commit -m 'Add .md file'
+[master 61dc382] Add .md file
+ 2 files changed, 260 insertions(+)
+ create mode 100755 VsCodeLiveShare.md
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ git push
+Username for 'https://github.com': shirajp
+Password for 'https://shirajp@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/shiriajp/20191104.git/'
+shiriajp@DESKTOP-QMP86VA:~/20191104$ git push
+Username for 'https://github.com': shiriajp
+Password for 'https://shiriajp@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.80 KiB | 1.40 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/shiriajp/20191104.git
+   4405225..61dc382  master -> master
+shiriajp@DESKTOP-QMP86VA:~/20191104$ ls -la
+total 28
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 17:27 .
+drwxr-xr-x 1 shiriajp shiriajp  512 Nov  4 16:15 ..
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 17:28 .git
+-rw-rw-rw- 1 shiriajp shiriajp   20 Nov  4 16:22 .gitignore
+-rw-rw-rw- 1 shiriajp shiriajp 7215 Nov  4 17:27 README.md
+-rwxrwxrwx 1 shiriajp shiriajp  531 Nov  4 17:27 VsCodeLiveShare.md
+-rw-rw-rw- 1 shiriajp shiriajp  138 Nov  4 16:22 arrow.ts
+-rw-rw-rw- 1 shiriajp shiriajp  484 Nov  4 16:22 helloworld.ts
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 16:16 node_modules
+-rw-rw-rw- 1 shiriajp shiriajp 2601 Nov  4 16:15 package-lock.json
+-rw-rw-rw- 1 shiriajp shiriajp  362 Nov  4 16:23 package.json
+-rw-rw-rw- 1 shiriajp shiriajp 5749 Nov  4 16:22 tsconfig.json
+shiriajp@DESKTOP-QMP86VA:~/20191104$ 
+shiriajp@DESKTOP-QMP86VA:~/20191104$ cd ../A
+shiriajp@DESKTOP-QMP86VA:~/A$ 
+shiriajp@DESKTOP-QMP86VA:~/A$ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/shiriajp/20191104
+   4405225..61dc382  master     -> origin/master
+Updating 4405225..61dc382
+Fast-forward
+ README.md          | 245 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ VsCodeLiveShare.md |  15 +++++++++++++
+ 2 files changed, 260 insertions(+)
+ create mode 100755 VsCodeLiveShare.md
+shiriajp@DESKTOP-QMP86VA:~/A$ ls -la
+total 28
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 17:28 .
+drwxr-xr-x 1 shiriajp shiriajp  512 Nov  4 16:15 ..
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 17:28 .git
+-rw-rw-rw- 1 shiriajp shiriajp   20 Nov  4 16:13 .gitignore
+-rw-rw-rw- 1 shiriajp shiriajp 7215 Nov  4 17:28 README.md
+-rwxrwxrwx 1 shiriajp shiriajp  531 Nov  4 17:28 VsCodeLiveShare.md
+-rw-rw-rw- 1 shiriajp shiriajp  309 Nov  4 16:32 arrow.ts
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 16:12 build
+-rw-rw-rw- 1 shiriajp shiriajp  484 Nov  4 16:19 helloworld.ts
+drwxrwxrwx 1 shiriajp shiriajp  512 Nov  4 15:34 node_modules
+-rw-rw-rw- 1 shiriajp shiriajp 2601 Nov  4 15:34 package-lock.json
+-rw-rw-rw- 1 shiriajp shiriajp  364 Nov  4 16:25 package.json
+-rw-rw-rw- 1 shiriajp shiriajp 5751 Nov  4 16:33 tsconfig.json
+shiriajp@DESKTOP-QMP86VA:~/A$ 
 ```
