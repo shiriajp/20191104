@@ -5,6 +5,10 @@ const myfunc=(arg:number)=>{
 }
 
 
+
+
 console.log(myfunc(1))
 
 // npm run ts-node arrow.ts
+// npm run tsc
+// node arrow.js

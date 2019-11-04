@@ -19,3 +19,8 @@ console.log("helloworld")
 // git config --global user.name shiriajp
 // git config --global user.email 57060562+shiriajp@users.noreply.github.com
 
+
+// cd ..
+// git clone https://github.com/shiriajp/20191104.git
+
+// npm install
