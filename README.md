@@ -13,6 +13,18 @@ npm install typescript ts-node
 npm run tsc -- --init
 
 ```
+tscconfig.jsonは色々弄れる。(npm run tsc -- --initで作成)
+
+package.jsonを編集してTypescriptコマンドを利用できるように
+
+tscがコンパイルコマンド
+
+```
+ "scripts": {
+    "tsc": "tsc",
+    "ts-node": "ts-node",
+ 
+```
 
 ## 2. Repository 作成
 GitHubへGo
